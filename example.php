@@ -29,7 +29,7 @@
     ]
   ]);
   
-  $analyzer->addStrategy('similar');
+  $analyzer->addStrategy('simple');
   
   $string = 'Du bist ein Arsch!';
   

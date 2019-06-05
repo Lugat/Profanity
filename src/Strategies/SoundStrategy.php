@@ -1,5 +1,14 @@
 <?php
 
+  /**
+   * Sound Strategy
+   * 
+   * @copyright Copyright (c) 2019 SquareFlower Websolutions
+   * @license BSD License
+   * @author Lukas Rydygel <hallo@squareflower.de>
+   * @version 0.1
+   */
+
   namespace Profanity\Strategies;
   
   use Profanity\AbstractStrategy;

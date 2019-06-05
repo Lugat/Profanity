@@ -1,5 +1,14 @@
 <?php
 
+  /**
+   * Similar Strategy
+   * 
+   * @copyright Copyright (c) 2019 SquareFlower Websolutions
+   * @license BSD License
+   * @author Lukas Rydygel <hallo@squareflower.de>
+   * @version 0.1
+   */
+
   namespace Profanity\Strategies;
   
   use Profanity\AbstractStrategy;
@@ -19,9 +28,9 @@
         
         foreach ($badwords as $badword) {
           
-          similar_text($word, $badword, $this->percent);
+          similar_text($word, $badword, $percent);
           
-          if ($this->percent >= $this->index) {
+          if ($percent >= $this->index) {
             return true;
           }
           
