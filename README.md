@@ -3,7 +3,7 @@ Strategy driven spam- and badword detection.
 
 ## Basic usage
 
-1. Create a new analyzer with a given config:
+###1. Create a new analyzer with a given config:###
 
 ```php
 $analyzer = new Profanity\Analyzer($config);
@@ -14,7 +14,7 @@ The base config may contain the following parameters:
 aliases: array of letters or words which should be changed, eg. '0' => 'o'
 badwords: array of words which should be detected, eg. 'asshole'
 
-2. Add one or more strategies to the analyzer:
+###2. Add one or more strategies to the analyzer:###
 
 ```php
 $analyzer->addStrategy($strategy1, $config);
@@ -23,7 +23,7 @@ $analyzer->addStrategy($strategy2, $config);
 
 The strategies will be executed in the order they have been added to the analyzer.
 
-3. Execute the analyzer with a random string, eg. comments on your website etc.
+###3. Execute the analyzer with a random string, eg. comments on your website etc.###
 
 ```php
 $badwordFound = $analyzer->execute($string);
