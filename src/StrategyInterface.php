@@ -13,5 +13,5 @@
   
   interface StrategyInterface
   {
-    public function execute(string $string) : bool;   
+    public function execute(string $string, array $badwords = []) : bool;   
   }
