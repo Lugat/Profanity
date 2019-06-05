@@ -22,7 +22,7 @@
     public function execute(string $string, array $badwords = []) : bool
     {
             
-      $words = $words = str_word_count($string, 1);
+      $words = str_word_count($string, 1);
       
       foreach ($words as $word) {
         
