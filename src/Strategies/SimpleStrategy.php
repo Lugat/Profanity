@@ -6,7 +6,7 @@
    * @copyright Copyright (c) 2019 SquareFlower Websolutions
    * @license BSD License
    * @author Lukas Rydygel <hallo@squareflower.de>
-   * @version 0.1
+   * @version 0.1.1
    */
 
   namespace Profanity\Strategies;
@@ -20,12 +20,8 @@
     public function execute(string $string, array $badwords = []) : bool
     {
       
-      foreach ($badwords as $badword) {
-        
-        if (preg_match("/\b$badword\b/i", $string)) {
-          return true;
-        }
-      
+      if (preg_match('/\b'.implode('|', $badwords).'\b/i', $string)) {
+        return true;
       }
       
       return false;
